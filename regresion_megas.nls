@@ -1,0 +1,25 @@
+__includes ["regresion.nls"]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;SYSTEMINTERFACE MEGAS;;;;;;;;;;;;;;;;;;;;;;;;;;
+to-report complete_operations_megas[x]
+  let relacion ((2.5221 * (x ^ 4)) - (20.509 * (x ^ 3)) + (45.738 * (x ^ 2)) - (14.671 * x) - (4 * (10 ^ -11)))
+  let aleatorio valores_aleatorios (0.9)
+  report aleatorio + relacion
+end
+
+to-report post_msgpairs_megas[x]
+  let relacion ((3.1291 * (x ^ 4)) - (22.769 * (x ^ 3)) + (41.405 * (x ^ 2)) + (3.2256 * x) - (8 * (10 ^ -11)))
+  let aleatorio valores_aleatorios (0.9)
+  report aleatorio + relacion
+end
+
+;to-report pvfs_sys_megas[x]
+;  let relacion (266.5 * x) - 307.5
+;  let aleatorio valores_aleatorios (1.5)
+;  report aleatorio + relacion
+;end
+
+;;;;NOTA: PARA MEGAS NO ES JUSTO OBTENER ALEATORIO APARTIR DEL DESVIO ESTANDAR;;;;
+
+
+  
